@@ -6,6 +6,8 @@
 
 You can find the original project specification [here](https://github.com/microverseinc/project-react-calculator/blob/master/milestones/MILESTONE_1.md)
 
+You can see the live version [here](https://magicianscalc.herokuapp.com/)
+
 ## This project use the following tools
 - Node.js
 - React
@@ -64,4 +66,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Author
 Christian Romero https://github.com/jcromerohdz
 
-## Dev Branch
+## Milestone 1 Branch
