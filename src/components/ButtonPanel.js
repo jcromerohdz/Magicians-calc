@@ -1,9 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
+import Button from './Button';
 
-const ButtonPanel = () => {
+import './ButtonPanel.css';
+
+const ButtonPanel = ({ buttons }) => {
+  const buttonsList = buttons.map(button => <Button key={button.id} buttonName={button.name} />);
   return (
-    <div>
-      ButtonPanel component
+    <div className="buttonsDisplay">
+      {buttonsList}
     </div>
   );
 };
