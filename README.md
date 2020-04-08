@@ -1,4 +1,4 @@
-# React Caulculator
+# React Calculator
 # SOLO Project:
 ## Project Specifications:
  Math-magicians (Fictional Company) have requested your help to build a simple product that would assist them with their calculations. An important thing to notice is that they have asked for a product that is not just fully-functional, but also beautiful and user-friendly.
