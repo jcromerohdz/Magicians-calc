@@ -66,4 +66,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Author
 Christian Romero https://github.com/jcromerohdz
 
-## Milestone 2 - Components
+## Milestone 3 - Styling
