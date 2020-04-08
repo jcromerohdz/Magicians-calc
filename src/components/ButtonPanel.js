@@ -26,30 +26,28 @@ const ButtonPanel = () => {
       id: 4,
       name: '÷',
       category: 'operatorKey',
+      color: true,
     }],
     [{
       id: 5,
       name: '7',
       category: 'digitKey',
-      
     },
     {
       id: 6,
       name: '8',
       category: 'digitKey',
-      
     },
     {
       id: 7,
       name: '9',
       category: 'digitKey',
-      
     },
     {
       id: 8,
       name: 'X',
       category: 'operatorKey',
-      
+      color: true,
     }],
     [{
       id: 9,
@@ -69,6 +67,8 @@ const ButtonPanel = () => {
     {
       id: 12,
       name: '-',
+      category: 'operatorKey',
+      color: true,
     }],
     [{
       id: 13,
@@ -89,11 +89,13 @@ const ButtonPanel = () => {
       id: 16,
       name: '+',
       category: 'operatorKey',
+      color: true,
     }],
     [{
       id: 17,
       name: '0',
       category: 'digitKey',
+      wide: true,
     },
     {
       id: 18,
@@ -103,6 +105,7 @@ const ButtonPanel = () => {
       id: 19,
       name: '=',
       category: 'operatorKey',
+      color: true,
     }]];
 
 
@@ -110,7 +113,12 @@ const ButtonPanel = () => {
     <div key={idx} className={`category category-${idx}`}>
       {
         group.map(button => (
-          <Button key={button.id} buttonName={button.name} />
+          <Button
+            key={button.id}
+            buttonName={button.name}
+            color={button.color ? button.color : false}
+            wide={button.wide ? button.wide : false}
+          />
         ))
       }
     </div>
