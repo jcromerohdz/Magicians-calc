@@ -4,6 +4,8 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
+import './App.css';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -14,7 +16,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div className="container-app">
         <Display />
         <ButtonPanel />
       </div>

@@ -3,12 +3,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Display.css';
+
 // eslint-disable-next-line react/prefer-stateless-function
 class Display extends React.Component {
   render() {
     return (
-      <div>
-        <input type="text" defaultValue={this.props.result} />
+      <div className="calculator-display">
+        {this.props.result}
       </div>
     );
   }
