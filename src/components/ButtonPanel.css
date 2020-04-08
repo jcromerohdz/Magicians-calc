@@ -1,4 +1,15 @@
-.buttonsDisplay{
+/* .buttonsDisplay{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+} */
+
+.calculator-panel {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.category{
+  height: 100px;
 }
