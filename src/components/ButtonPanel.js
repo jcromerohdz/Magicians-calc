@@ -45,7 +45,7 @@ const ButtonPanel = () => {
     },
     {
       id: 8,
-      name: 'X',
+      name: 'x',
       category: 'operatorKey',
       color: true,
     }],

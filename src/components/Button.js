@@ -3,12 +3,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ buttonName }) => (
-  <button type="button" value={buttonName}>{buttonName}</button>
+import './Button.css';
+
+const Button = ({ buttonName, color, wide }) => (
+  <div className={wide ? 'button-container cero' : 'button-container'}>
+    <button className={color ? 'button operator' : 'button'} type="button" value={buttonName}>{buttonName}</button>
+  </div>
 );
 
 Button.propTypes = {
   buttonName: PropTypes.string,
+  color: PropTypes.bool,
+  wide: PropTypes.bool,
 };
 
 export default Button;
