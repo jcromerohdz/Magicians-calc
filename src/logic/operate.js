@@ -10,7 +10,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '/':
       if (secondNum === '0') return '0';
       return firstNum.div(secondNum).toString();
-    case 'X':
+    case 'x':
       return firstNum.times(secondNum).toString();
     default:
       return '0';
