@@ -1,11 +1,13 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Button from './Button';
 
 import './ButtonPanel.css';
 
-const ButtonPanel = () => {
+const ButtonPanel = ({handleClick}) => {
   const buttons = [
     [{
       id: 1,
@@ -118,6 +120,7 @@ const ButtonPanel = () => {
             buttonName={button.name}
             color={button.color ? button.color : false}
             wide={button.wide ? button.wide : false}
+            handleClick={handleClick}
           />
         ))
       }
@@ -128,6 +131,10 @@ const ButtonPanel = () => {
       {buttonsList}
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired,
 };
 
 
