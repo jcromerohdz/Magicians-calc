@@ -14,15 +14,26 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     // eslint-disable-next-line react/no-unused-state
-    this.state = { result: null };
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    this.setState(state => calculate(state, buttonName));
   }
 
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="container-app">
-        <Display />
-        <ButtonPanel />
+        <Display operation={operation} next={next || '0'} total={total || '0'} />
+        <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
   }
