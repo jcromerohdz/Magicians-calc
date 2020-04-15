@@ -24,7 +24,9 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
-    this.setState(state => calculate(state, buttonName));
+    // eslint-disable-next-line no-unused-vars
+    const dataObject = this.state;
+    this.setState(dataObject => calculate(dataObject, buttonName));
   }
 
 

@@ -8,9 +8,13 @@ const operate = (numberOne, numberTwo, operation) => {
       return firstNum.plus(secondNum).toString();
     case '-':
       return firstNum.minus(secondNum).toString();
-    case '/':
-      if (secondNum === '0') return '0';
-      return firstNum.div(secondNum).toString();
+    case '÷':
+      if (secondNum.toString() === '0') {
+        return '0';
+      // eslint-disable-next-line no-else-return
+      } else {
+        return firstNum.div(secondNum).toString();
+      }
     case 'x':
       return firstNum.times(secondNum).toString();
     default:

@@ -8,21 +8,25 @@ import './Display.css';
 // eslint-disable-next-line react/prefer-stateless-function
 class Display extends React.Component {
   render() {
+    const { total, next, operation } = this.props;
     return (
       <div className="calculator-display">
-        {this.props.result}
+        {operation ? next : total}
       </div>
     );
   }
 }
 
-
 Display.defaultProps = {
-  result: '0',
+  total: '0',
+  next: null,
+  operation: null,
 };
 
 Display.propTypes = {
-  result: PropTypes.string,
+  total: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
 };
 
 export default Display;
