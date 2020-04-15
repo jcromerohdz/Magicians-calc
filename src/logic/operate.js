@@ -10,7 +10,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return firstNum.minus(secondNum).toString();
     case '÷':
       if (secondNum.toString() === '0') {
-        return '0';
+        return 'INFINITY';
       // eslint-disable-next-line no-else-return
       } else {
         return firstNum.div(secondNum).toString();
