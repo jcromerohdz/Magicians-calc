@@ -7,7 +7,7 @@ import Button from './Button';
 
 import './ButtonPanel.css';
 
-const ButtonPanel = ({handleClick}) => {
+const ButtonPanel = ({ handleClick }) => {
   const buttons = [
     [{
       id: 1,

@@ -6,7 +6,11 @@
 
 You can find the original project specification [here](https://github.com/microverseinc/project-react-calculator/blob/master/milestones/MILESTONE_1.md)
 
+![screenshot](./calculator.png)
+
 You can see the live version [here](https://magicianscalc.herokuapp.com/)
+
+
 
 ## This project use the following tools
 - Node.js
@@ -66,4 +70,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Author
 Christian Romero https://github.com/jcromerohdz
 
-## Milestone 4 - Calculations
+## Milestone 5 - Calculations
